@@ -1,0 +1,509 @@
+    /* Estilo para o input personalizado */
+    .custom-input {
+        width: 128px;
+        height: 128px;
+        border: 2px dashed #ccc;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      /* Estilo para a pré-visualização da imagem */
+      .preview-image {
+        max-width: 128px;
+        max-height: 128px;
+        border-radius: 64px;
+        box-shadow: 12px 12px 12px rgb(233, 233, 233);
+        cursor: pointer;
+      }
+
+      .toolbar {
+        background-color: #f2f2f2;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+      }
+      .toolbar button {
+        background-color: #fff;
+        border: none;
+        padding: 5px 10px;
+        margin-right: 5px;
+        cursor: pointer;
+      }
+      .editor {
+        height: 420px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        max-height: 420px;
+        overflow: scroll;
+      }
+
+
+      .card-do-jogo {
+ 
+        cursor: pointer;
+        margin-left: 12px; 
+        margin-top: 12px; 
+        display: flex; 
+        flex-direction: column ; 
+        width: 300px; 
+        height: 180px; 
+        background: url('../images/bg-placeholder.png'); 
+        background-size: cover;
+        margin-bottom: 12px;
+        filter: grayscale(15%);
+        color: gray;
+        box-shadow: none;
+        transition-property: filter, box-shadow, color;
+        transition-timing-function: ease-in-out;
+        transition-duration: 250ms;
+        border: "1px solid gray";
+      }
+
+      .card-do-jogo:hover {
+        cursor: pointer;
+        margin-left: 12px; 
+        margin-top: 12px; 
+        display: flex; 
+        flex-direction: column ; 
+        width: 300px; 
+        height: 180px; 
+        background: url('../images/bg-placeholder.png'); 
+        filter: grayscale(0%);
+        color: white;
+        background-size: cover;
+        box-shadow: 0px 0px 24px #28fa8636;
+        transition-property: color, filter,  box-shadow;
+        transition-timing-function: ease-in-out;
+        transition-duration: 250ms;
+        border: "1px solid gray";
+      }
+      .card-do-jogo img{
+        width: 64px;
+        height: 64px;
+        box-shadow: none;
+        border-radius: none;
+        transition-property: width, height, box-shadow, border-radius;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+      }
+      .card-do-jogo:hover img{
+
+        width: 72px;
+        height: 72px;
+        box-shadow: 1px 1px 32px black;
+        border-radius: 32px;
+        transition-property: width, height, box-shadow, border-radius;
+        transition-timing-function: ease-in-out;
+        transition-duration: 500ms;
+      }
+
+      .topjogos{
+        width: 100%; 
+        height: 100%;
+        background: url('../images/bg-placeholder.png'); 
+        background-size: 100%;
+        background-position-y: -40px;
+        cursor: pointer;
+        filter: brightness(40%);
+      }
+
+      hr {
+        color: gray;
+        width: 80%;
+        height: 1px;
+      }
+
+
+
+
+      /* css */
+      .bContainer{
+        width: 1360px; 
+        height: 100%; 
+        display: flex; 
+        justify-content: space-between; 
+        flex-wrap: wrap;
+      }
+
+      .bSubContainer{
+        display: flex; 
+        flex-direction: column; 
+        width: 70%;
+      }
+
+      .bRow1{
+        margin-top: 24px;
+        width: 100%;
+        height: 256px;
+        background-color:  rgba(0,0,0,0.5);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .bTiTleDiv {
+        display: flex; 
+        align-items: center; 
+        width: 50%; 
+        height: 52px;
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      .bTitle1{
+        margin-left: 24px;
+        color: white;
+      }
+
+      .bContentDiv{
+        display: flex; 
+        padding-top: 12px;
+      }
+
+      .bCardImages{
+        display: flex; 
+        padding: 12px; 
+        align-items: center; 
+        height: 90%;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .bLenged{
+        margin-left: 12px;
+        font-weight: bold; 
+        font-size: 0.8em;
+      }
+
+      .bRow2{
+        margin-top: 24px; 
+        width: 100%; 
+        height: auto; 
+        background-color:  rgba(0,0,0,0.5);
+      }
+
+      .contentDivWrap{
+        display: flex; 
+        flex-wrap: wrap; 
+        padding-top: 12px; 
+        width: 100%;
+      }
+
+      .contentDivColumn{
+        display: flex; 
+        flex-direction: column; 
+        width: 360px;
+      }
+
+      .subContentColor2{
+        display: flex; 
+        flex-direction: column; 
+        width: 360px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .subContentDiv3{
+        margin-top: 6px; 
+        border: 1px solid gray;
+        cursor: pointer; 
+        width: 100%; 
+        height: 128px; 
+        display: flex; 
+        /* flex-direction: column;  */
+        align-items: center; 
+        justify-content: center; 
+        text-align: center;
+      }
+
+      .bTitleDiv2{
+        display: flex; 
+        justify-content:center; 
+        align-items: center; 
+        width: 100%; 
+        height: 52px; 
+        background-color: rgba(0,0,0,0.7);
+      }
+
+      .bLegend2{
+        position: absolute;
+        z-index: 3000; 
+        margin-top: 24px;
+        width: 300px; 
+        color: white; 
+        font-weight: bold; 
+        font-size: 1em;
+      }
+
+      .bCardImages2{
+        display: flex; 
+        padding: 12px; 
+        align-items: center; 
+        height: 75%; 
+        width: 100%; 
+        justify-content: space-between;
+      }
+
+      .bHeaderContainer{
+        width: 110vw; 
+        height: 5em; 
+        display: flex; 
+        justify-content: space-around; 
+        margin-left: -5vw;
+      }
+
+      .bHeaderLeftBar{
+        box-shadow: 1px 1px 32px black;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 45%;
+        transform: skew(-20deg);
+        background: linear-gradient(90deg, rgba(0,0,0,0.896796218487395) 0%, rgba(45,45,45,0.8463760504201681) 50%, rgba(53,240,99,0.48783263305322133) 100%);
+      }
+
+      .bHeaderRightBar{
+        box-shadow: 1px 1px 32px black;  
+        display: flex; 
+        justify-content:center; 
+        align-items: center; 
+        border-right-color: transparent; 
+        width: 45%; 
+        transform: skew(20deg);  
+        background: linear-gradient(270deg, rgba(0,0,0,0.896796218487395) 0%, rgba(45,45,45,0.8463760504201681) 50%, rgba(53,240,99,0.48783263305322133) 100%);
+      }
+
+      .bButonBurger{
+        transform: skew(20deg); 
+        cursor: pointer;
+      }
+
+
+      .bContainerLiveAjust{
+        background-color: rgba(0,0,0,0.8); 
+        box-shadow: 0px 0px 32px black; 
+        width: 1280px; 
+        height: 1280px; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center;
+      }
+
+      .bIframe{
+        margin-left: 0; 
+        margin-top: 24px;
+        z-index: 3001 ; 
+        width: 640px; 
+        height: 360px; 
+        display:flex; 
+        justify-content: center; 
+        box-shadow: 0px 0px 32px black; 
+        border: 2px solid gray; 
+        background-color: black;
+      }
+
+      .bCanais{
+        background-color: black; 
+        border: 2px solid gray; 
+        width: 640px; 
+        height: 52px; 
+        padding: 6px; 
+        display: flex; 
+        justify-content: space-around;
+      }
+
+      .bTitleGray{
+        width: 900px;
+        margin-top: 12px; 
+        color: gray; 
+        text-align: center;
+      }
+
+      .bTitleWhite{
+        width: 900px;
+        margin-top: 12px; 
+        color: white; 
+        text-align: center;
+      }
+
+      .bTitleGreen{
+        width: 900px;
+        margin-top: 12px; 
+        color: #35f063; 
+        text-align: center;
+      }
+
+      .bJogosRelacionados{
+        background-color: rgba(0,0,0,0.8); 
+        box-shadow: 0px 0px 32px black; 
+        margin-top: 32px; 
+        width: 1280px;
+        height: auto; 
+        display: flex;
+        flex-direction: column;
+      }
+
+      @media screen and (max-width: 992px) {
+        .bJogosRelacionados{
+          background-color: rgba(0,0,0,0.8); 
+          box-shadow: 0px 0px 32px black; 
+          margin-top: 32px; 
+          width: 100%;
+          height: auto; 
+          display: flex;
+          flex-direction: column;
+        }
+        .bTitleGray{
+          width: 100%;
+          margin-top: 12px; 
+          color: gray; 
+          text-align: center;
+        }
+  
+        .bTitleWhite{
+          width: 100%;
+          margin-top: 12px; 
+          color: white; 
+          text-align: center;
+        }
+  
+        .bTitleGreen{
+          width: 100%;
+          margin-top: 12px; 
+          color: #35f063; 
+          text-align: center;
+        }
+        .bIframe{
+          margin-left: 0; 
+          margin-top: 24px;
+          z-index: 3001 ; 
+          width: 100%; 
+          height: 180px; 
+          display: flex; 
+          justify-content: center; 
+          box-shadow: 0px 0px 32px black; 
+          border: 2px solid gray; 
+          background-color: black;
+        }
+        .bContainerLiveAjust{
+          background-color: rgba(0,0,0,0.8); 
+          box-shadow: 0px 0px 32px black; 
+          width: 100%; 
+          height: auto; 
+          display: flex; 
+          flex-direction: column; 
+          align-items: center;
+        }
+        .card-do-jogo {
+          cursor: pointer;
+          margin-left: 0px; 
+          margin-top: 12px; 
+          display: flex; 
+          flex-direction: column ; 
+          width: 90%; 
+          height: 180px; 
+          background: url('../images/bg-placeholder.png'); 
+          background-size: cover;
+          margin-bottom: 12px;
+          filter: grayscale(15%);
+          color: gray;
+          box-shadow: none;
+          transition-property: filter, box-shadow, color;
+          transition-timing-function: ease-in-out;
+          transition-duration: 250ms;
+          border: "1px solid gray";
+        }
+
+        .contentDivWrap{
+          width: 100%;
+          display: flex; 
+          flex-direction: column;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-items: center; 
+          padding-top: 12px; 
+        }
+
+        .bCanais{
+          background-color: black; 
+          border: 2px solid gray; 
+          width: 100%; 
+          height: 52px; 
+          padding: 6px; 
+          display: flex; 
+          justify-content: space-around;
+        }
+
+        .bRow1{
+          margin-top: 24px;
+          width: 100%;
+          height: auto;
+          background-color:  rgba(0,0,0,0.5);
+          display: flex;
+          flex-direction: column;
+        }
+        .bContainer{
+          width: 100%; 
+          height: 100%; 
+          display: flex; 
+          justify-content: space-between; 
+          flex-wrap: wrap;
+        }
+
+        .bContentDiv{
+          display: flex; 
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding-top: 12px;
+        }
+  
+        .bSubContainer{
+          display: flex; 
+          flex-direction: column; 
+          width: 100%;
+        }
+
+        .bTiTleDiv {
+          display: flex; 
+          align-items: center; 
+          width: 75%; 
+          height: 52px;
+          background-color: rgba(0,0,0,0.7);
+        }
+
+        .bTitle1{
+          margin-left: 12px;
+          color: white;
+        }
+        .bButonBurger{
+          transform: none; 
+          margin-left: 24px;
+          cursor: pointer;
+        }
+        .bHeaderContainer{
+          width: 100vw; 
+          height: 5em; 
+          display: flex; 
+          justify-content: space-around; 
+          margin-left: 0;
+        }
+        .bHeaderRightBar{
+          display: none;
+        }
+        .bLogo{
+          display: none;
+        }
+        .bHeaderLeftBar{
+          box-shadow: 1px 1px 32px black;  
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          width: 100%;
+          transform: none;
+          background: linear-gradient(90deg, rgba(0,0,0,0.896796218487395) 0%, rgba(45,45,45,0.8463760504201681) 50%, rgba(53,240,99,0.48783263305322133) 100%);
+        }
+      }

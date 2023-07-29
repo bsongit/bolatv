@@ -1,0 +1,10 @@
+{
+  "database": {
+    "mongo-uri" : "mongodb://"
+   },
+  "server": {
+    "port": 5000,
+    "allow-origin": "http://localhost:3000",
+    "domain": "http://localhost:3000"
+  }
+}
