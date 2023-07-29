@@ -1,0 +1,10 @@
+{
+  "database": {
+    "mongo-uri" : "mongodb://127.0.0.1:27017/edusystem"
+   },
+  "server": {
+    "port": 5000,
+    "allow-origin": "https://www.edusystem.com",
+    "domain": "http://localhost:3000"
+  }
+}
